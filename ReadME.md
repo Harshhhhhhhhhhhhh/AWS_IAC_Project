@@ -81,7 +81,7 @@ To delete all stacks and avoid ongoing charges:
 ### 1️⃣ Empty the S3 bucket first
 
 ```powershell
-aws s3 rm s3://<your-bucket-name> --recursive --region us-east-2
+aws s3 rm s3://udagram-udagram-bucket-313766952812 --recursive --region us-east-2
 ```
 
 ### 2️⃣ Delete stacks in reverse order
