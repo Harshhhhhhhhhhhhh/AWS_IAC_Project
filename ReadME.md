@@ -138,8 +138,7 @@ Include these screenshots in your `/screenshots` folder:
 2. `2_network_outputs.png` — network stack outputs  
 3. `3_app_outputs.png` — app stack outputs  
 4. `4_app_browser.png` — ALB URL in browser  
-5. `5_s3_outputs.png` — S3 stack outputs  
-6. `6_s3_website.png` — S3 static website in browser  
+5. `5_s3_website.png` — S3 static website in browser  
 
 ---
 
@@ -157,4 +156,4 @@ Include these screenshots in your `/screenshots` folder:
 
 **Author:** Harsh Raj  
 **Project:** Udagram - Infrastructure as Code  
-**Course:** Cloud DevOps Engineer Nanodegree
+
