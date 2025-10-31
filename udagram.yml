@@ -75,10 +75,10 @@ Resources:
       LaunchTemplateData:
         IamInstanceProfile:
           Name: !Ref AppInstanceProfile
-        ImageId: ami-089a545a9ed9893b6  # Amazon Linux 2 (us-east-2)
+        ImageId: ami-083b3f53cbda7e5a4  # ✅ Latest Amazon Linux 2 AMI (us-east-2)
         InstanceType: !Ref InstanceType
         NetworkInterfaces:
-          - AssociatePublicIpAddress: true
+          - AssociatePublicIpAddress: false
             DeviceIndex: 0
             Groups:
               - !Ref AppSecurityGroup
@@ -130,7 +130,7 @@ Resources:
   AppAutoScalingGroup:
     Type: AWS::AutoScaling::AutoScalingGroup
     Properties:
-      VPCZoneIdentifier: !Split [",", !ImportValue udagram-PublicSubnets]
+      VPCZoneIdentifier: !Split [",", !ImportValue udagram-PrivateSubnets]
       MinSize: 2
       MaxSize: 4
       DesiredCapacity: 2
